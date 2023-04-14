@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário teste</title>
+</head>
+<body>
+    <div>
+        <h1> Formulário teste de inscrição</h1>
+        <p> Preencha o formulário abaixo e complete o teste.</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email"> 
+        </div>
+
+        <div>
+            <label>Selecione abaixo uma das opções</label>
+            <label>
+                <input type="radio" name="opcao" value="opcao1" checked>Opção 1
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="opcao2">Opção 2
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="opcao3">Opção 3
+            </label>
+        </div>
+
+        <div>
+            <label>Selecione um nível</label>
+            <select id="nivel">
+                <option selected disabled value="">Selecione</option>
+                <option>Básico</option>
+                <option>Intermediário</option>
+                <option>Avançado</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Selecione quais opções você utiliza</label><br><br>
+                <input type="checkbox" id="primeiraopcao" name="primeiraopcao" value="Primeira Opcao">
+                <label for="primeiraopcao">Primeira Opção</label>
+                <input type="checkbox" id="Segundaopcao" name="segundaopcao" value="Segunda Opção">
+                <label for="segundaopcao">Segunda Opção</label>
+                <input type="checkbox" id="terceiraopcao" name="terceiraopcao" value="Terceira Opcao">
+                <label for="terceiraopcao">Terceira Opção</label>
+                <input type="checkbox" id="quartaopcao" name="quartaopcao" value="Quarta Opção">
+                <label for="quartaopcao">Quarta Opção</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Escreva aqui a sua mensagem.</label>
+            <textarea row="6" style="width: 26em" id="mensagem" nome="mensagem"></textarea>
+        </div>
+
+        <button type="submit">Concluído</button>
+    </form>
+</body>
+</html>
