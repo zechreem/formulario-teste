@@ -4,76 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário teste</title>
+    <title>Desafio Pinguim</title>
 </head>
 <body>
     <div>
-        <h1> Formulário teste de inscrição</h1>
-        <p> Preencha o formulário abaixo e complete o teste.</p>
+        <h1> Desafio-pinguim!</h1>
+        <p> Olá pinguins! Este formulário foi criado com o auxílio de nosso sensei, para definirmos o seu nível de conhecimento no mundo do Club Penguin. Será que você é faixa azul, amarela ou preta?
+            Preencha e descubra!
+        </p>
         <br>
     </div>
 
     <form>
         <fieldset>
             <div>
-                <label>Nome</label>
+                <label>Para começar, qual o seu nome de usuário?</label>
                 <input type="text" name="nome" id="nome">
             </div>
 
             <div>
-                <label>Sobrenome</label>
+                <label>Qual o seu servidor de residência?</label>
                 <input type="text" name="sobrenome" id="sobrenome">
             </div>
         </fieldset>
 
         <div>
-            <label>Email</label>
+            <label>Escreva por favor o seu Em@il:</label>
             <input type="email" name="email" id="email"> 
         </div>
 
         <div>
-            <label>Selecione abaixo uma das opções</label>
-            <label>
-                <input type="radio" name="opcao" value="opcao1" checked>Opção 1
+            <label>Queremos saber qual o seu nível de senioridade!
+                Em que época você jogou Club Penguin?
             </label>
             <label>
-                <input type="radio" name="opcao" value="opcao2">Opção 2
+                <input type="radio" name="opcao" value="opcao1" checked>Beta-alpha! Sou 18+ (idoso)
             </label>
             <label>
-                <input type="radio" name="opcao" value="opcao3">Opção 3
+                <input type="radio" name="opcao" value="opcao2">Joguei durante a "era dourada"
+            </label>
+            <label>
+                <input type="radio" name="opcao" value="opcao3">Após o domínio maligno da Disney, o que levou ao fim da nossa querida ilha.
             </label>
         </div>
 
         <div>
-            <label>Selecione um nível</label>
+            <label>Diga aqui qual era a cor do seu pinguim (não que isso importe!) </label>
             <select id="nivel">
                 <option selected disabled value="">Selecione</option>
-                <option>Básico</option>
-                <option>Intermediário</option>
-                <option>Avançado</option>
+                <option>Azul</option>
+                <option>Amarelo</option>
+                <option>Preto</option>
+                <option>Verde</option>
+                <option>Rosa</option>
             </select>
         </div>
 
         <fieldset>
             <div>
-                <label>Selecione quais opções você utiliza</label><br><br>
-                <input type="checkbox" id="primeiraopcao" name="primeiraopcao" value="Primeira Opcao">
-                <label for="primeiraopcao">Primeira Opção</label>
-                <input type="checkbox" id="Segundaopcao" name="segundaopcao" value="Segunda Opção">
-                <label for="segundaopcao">Segunda Opção</label>
-                <input type="checkbox" id="terceiraopcao" name="terceiraopcao" value="Terceira Opcao">
-                <label for="terceiraopcao">Terceira Opção</label>
-                <input type="checkbox" id="quartaopcao" name="quartaopcao" value="Quarta Opção">
-                <label for="quartaopcao">Quarta Opção</label>
+                <label>Qual dos pinguins famosos você já encontrou?</label><br><br>
+                <input type="checkbox" id="rockhopper" name="rockhopper" value="rockhopper">
+                <label for="rockhopper">Rockhopper</label>
+                <input type="checkbox" id="Cadence" name="Cadence" value="Cadence">
+                <label for="Cadence">DJ Cadence</label>
+                <input type="checkbox" id="PenguinBand" name="PenguinBand" value="PenguinBand">
+                <label for="PenguinBand">Penguin Band</label>
+                <input type="checkbox" id="Herbert" name="Herbert" value="Herbert">
+                <label for="Herbert">Maligno Herbert</label>
+                <input type="checkbox" id="Tia-arctic" name="Tia-arctic" value="Tia-arctic">
+                <label for="Tia-arctic">Tia-arctic</label>
+                <input type="checkbox" id="Gary" name="Gary" value="Gary">
+                <label for="Gary">Gary</label>
             </div>
         </fieldset>
 
         <div>
             <br>
-            <label>Escreva aqui a sua mensagem.</label>
+            <label>Conte-nos um pouquinho sobre a sua história neste lindo universo!</label>
             <textarea row="6" style="width: 26em" id="mensagem" nome="mensagem"></textarea>
         </div>
-
+<br>
+<br>
+<p> Obrigado, querido amigo pinguim! Retornaremos em breve com o resultado de seu teste. Lembre-se que a cor da sua faixa não diz nada sobre você!
+    O importante é seguir ~penguinando~!
+</p>
         <button type="submit">Concluído</button>
     </form>
 </body>
