@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
     <title>Desafio Pinguim</title>
 </head>
 <body>
     <div>
-        <h1> Desafio-pinguim!</h1>
-        <p> Olá pinguins! Este formulário foi criado com o auxílio de nosso sensei, para definirmos o seu nível de conhecimento no mundo do Club Penguin. Será que você é faixa azul, amarela ou preta?
+        <h1 id="titulo"> Desafio-pinguim!</h1>
+        <p id="subtitulo"> Olá pinguins! Este formulário foi criado com o auxílio de nosso sensei, para definirmos o seu nível de conhecimento no mundo do Club Penguin. Será que você é faixa azul, amarela ou preta?
             Preencha e descubra!
         </p>
         <br>
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label>Para começar, qual o seu nome de usuário?</label>
-                <input type="text" name="nome" id="nome">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Para começar, qual o seu nome de usuário?</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>Qual o seu servidor de residência?</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="campo">
+                <label for="servidor"><strong>Qual o seu servidor de residência?</strong></label>
+                <input type="text" name="servidor" id="servidor">
             </div>
         </fieldset>
 
-        <div>
-            <label>Escreva por favor o seu Em@il:</label>
-            <input type="email" name="email" id="email"> 
+        <div class="campo">
+            <label for="email"><strong>Escreva por favor o seu Em@il:</strong></label>
+            <input type="email" name="email" id="email" required> 
         </div>
 
-        <div>
-            <label>Queremos saber qual o seu nível de senioridade!
-                Em que época você jogou Club Penguin?
+        <div class="campo">
+            <label><strong>Queremos saber qual o seu nível de senioridade!
+                Em que época você jogou Club Penguin?</strong>
             </label>
-            <label>
+            <label type="opcao">
                 <input type="radio" name="opcao" value="opcao1" checked>Beta-alpha! Sou 18+ (idoso)
             </label>
             <label>
@@ -48,8 +49,8 @@
             </label>
         </div>
 
-        <div>
-            <label>Diga aqui qual era a cor do seu pinguim (não que isso importe!) </label>
+        <div class="campo">
+            <label for="nivel"><strong>Diga aqui qual era a cor do seu pinguim (não que isso importe!) </strong></label>
             <select id="nivel">
                 <option selected disabled value="">Selecione</option>
                 <option>Azul</option>
@@ -60,9 +61,9 @@
             </select>
         </div>
 
-        <fieldset>
-            <div>
-                <label>Qual dos pinguins famosos você já encontrou?</label><br><br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Qual dos pinguins famosos você já encontrou?</strong></label><br>
                 <input type="checkbox" id="rockhopper" name="rockhopper" value="rockhopper">
                 <label for="rockhopper">Rockhopper</label>
                 <input type="checkbox" id="Cadence" name="Cadence" value="Cadence">
@@ -78,17 +79,17 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <br>
             <label>Conte-nos um pouquinho sobre a sua história neste lindo universo!</label>
-            <textarea row="6" style="width: 26em" id="mensagem" nome="mensagem"></textarea>
+            <textarea rows="8" style="width: 26em" id="mensagem" nome="mensagem"></textarea>
         </div>
 <br>
 <br>
-<p> Obrigado, querido amigo pinguim! Retornaremos em breve com o resultado de seu teste. Lembre-se que a cor da sua faixa não diz nada sobre você!
+<p id=final> Obrigado, querido amigo pinguim! Retornaremos em breve com o resultado de seu teste. Lembre-se que a cor da sua faixa não diz nada sobre você!
     O importante é seguir ~penguinando~!
 </p>
-        <button type="submit">Concluído</button>
+        <button class="botao" type="submit">Concluído</button>
     </form>
 </body>
 </html>
