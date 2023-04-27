@@ -16,7 +16,7 @@
         <br>
     </div>
 
-    <form>
+    <form id="formulario">
         <fieldset class="grupo">
             <div class="campo">
                 <label for="nome"><strong>Para começar, qual o seu nome de usuário?</strong></label>
@@ -82,14 +82,15 @@
         <div class="campo">
             <br>
             <label>Conte-nos um pouquinho sobre a sua história neste lindo universo!</label>
-            <textarea rows="8" style="width: 26em" id="mensagem" nome="mensagem"></textarea>
+            <textarea rows="8" style="width: 26em" id="mensagem" name="mensagem"></textarea>
         </div>
 <br>
 <br>
 <p id=final> Obrigado, querido amigo pinguim! Retornaremos em breve com o resultado de seu teste. Lembre-se que a cor da sua faixa não diz nada sobre você!
     O importante é seguir ~penguinando~!
 </p>
-        <button class="botao" type="submit">Concluído</button>
+        <button class="botao" id="submit" name="submit" type="submit">Concluído</button>
     </form>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
